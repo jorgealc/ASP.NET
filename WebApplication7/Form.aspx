@@ -12,7 +12,7 @@
     <link href="Content/font-awesome.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <style type="text/css">
-        .messagealert {
+        .messagealert { 
             width: 100%;
             position: fixed;
             top: 0px;
