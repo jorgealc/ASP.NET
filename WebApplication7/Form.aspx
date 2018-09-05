@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <title></title>
+    <link href="Styles/Style.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
@@ -48,7 +49,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navigation">
         <a class="navbar-brand" href="#">
             <img style="width: 35px; height: 50px" src="Imagenes/logo.PNG" /></a>
 
@@ -61,7 +62,7 @@
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Form.aspx">Formulario</a>
+                    <a class="nav-link" href="Registro.aspx">Formulario</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Tabla.aspx">Liga 2018/2019 AJAX</a>

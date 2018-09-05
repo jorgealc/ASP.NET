@@ -8,18 +8,18 @@ namespace WebApplication7
     public class Equipo
     {
 
-        public Equipo(int id, int posicion, String equipo, String provincia)
+        public Equipo(int id, int posicion, String equipo, int puntos)
         {
             this.id = id;
             this.posicion = posicion;
             this.equipo = equipo;
-            this.provincia = provincia;
+            this.puntos = puntos;
 
         }
         public int id { get; set; }
         public int posicion { get; set; }
         public String equipo { get; set; }
-        public String provincia { get; set; }
+        public int puntos { get; set; }
 
     }
 }

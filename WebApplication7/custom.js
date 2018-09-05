@@ -3,8 +3,16 @@
 }
 );
 function _showUsers() {
-    $("#boton").on("click", function () {
-        dtEquipos();
+    $("#pepe").change(function () {
+        if ($("#pepe :selected").text() == "Jornada 1") {
+            console.log("Jornada 1");
+            dtEquipos();
+        }
+        if ($("#pepe :selected").text() == "Jornada 2") {
+            console.log("Jornada 2");
+            dtEquipos2();
+        }
+        
     });
 }
 function test(){
@@ -36,8 +44,31 @@ function dtEquipos(){
             
     {"data": "posicion"},
 { "data": "equipo" },
-{ "data": "provincia" }
+{ "data": "puntos" }
 
 ]
 });
+}
+function dtEquipos2() {
+    var table = $("#table-equipos").DataTable({
+        destroy: true,
+        responsive: true,
+        ajax: {
+            method: "POST",
+            url: "Tabla.aspx/getEquipos2",
+            contentType: " application/json; charset=utf-8",
+            dataType: "json",
+            data: function (d) {
+                return JSON.stringify(d);
+            },
+            dataSrc: "d.data"
+        },
+        columns: [
+
+    { "data": "posicion" },
+{ "data": "equipo" },
+{ "data": "puntos" }
+
+        ]
+    });
 }

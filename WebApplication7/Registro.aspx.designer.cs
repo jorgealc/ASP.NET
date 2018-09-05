@@ -10,7 +10,7 @@
 namespace WebApplication7 {
     
     
-    public partial class Tabla {
+    public partial class Registroaspx {
         
         /// <summary>
         /// Control form1.
@@ -20,23 +20,5 @@ namespace WebApplication7 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Control jornadaselect.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect jornadaselect;
-        
-        /// <summary>
-        /// Control pepe.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList pepe;
     }
 }
