@@ -51,7 +51,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navigation">
         <a class="navbar-brand" href="#">
-            <img style="width: 35px; height: 50px" src="Imagenes/logo.PNG" /></a>
+            <img style="width: 35px; height: 50px" src="images/logo.PNG" /></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

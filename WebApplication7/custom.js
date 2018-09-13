@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('.tabla').DataTable();
-}
-);
+   
+});
 function _showUsers() {
     $("#pepe").change(function () {
         if ($("#pepe :selected").text() == "Jornada 1") {
@@ -15,6 +15,64 @@ function _showUsers() {
         
     });
 }
+
+$('#table-equipos').on("click", "tr", function (e) {
+
+    var equipo = ($(this).find('td').eq(1).text());
+    if (equipo == "") {
+        $('##popupdiv.in').modal('hide');
+    }
+    if (equipo == "Real Madrid" && ($("#pepe :selected").text() == "Jornada 1")) {
+        $("#alineacion > img").attr('src','http://localhost:49291/images/real_madrid.jpg' );
+        $("#resultado").text("Real Madrid: 4 Leganés : 1");
+        $("#jugadores").text("1 Bale 2 Benzema  1 Ramos");
+        $("#amarillas").text("Luka Modric");
+        $("#rojas").text("Ninguno");
+        $("#popupdiv").dialog({
+            title: equipo,
+            width: 850,
+            height: 550,
+            modal: true,
+            buttons: {
+                Close: function () {
+                    $(this).dialog('close');
+                }
+            }
+        });
+    }
+    else if (equipo == "Barcelona" && ($("#pepe :selected").text() == "Jornada 1")) {
+        $("#resultado").text("");
+        $("#jugadores").text("");
+        $("#alineacion > img").attr('src', '');
+        $("#amarillas").text("");
+        $("#popupdiv").dialog({
+            title: equipo,
+        });
+
+    }
+
+    else {
+        $("#resultado").text("");
+        $("#jugadores").text("");
+        $("#alineacion > img").attr('src', '');
+        $("#amarillas").text("");
+        $("#popupdiv").dialog({
+            title: equipo,
+        });
+
+    }
+
+   
+});
+
+
+
+
+
+
+
+
+
 function test(){
     $.ajax({
         method: "POST",
@@ -45,6 +103,7 @@ function dtEquipos(){
     {"data": "posicion"},
 { "data": "equipo" },
 { "data": "puntos" }
+
 
 ]
 });

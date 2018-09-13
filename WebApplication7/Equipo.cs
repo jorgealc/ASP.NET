@@ -14,12 +14,14 @@ namespace WebApplication7
             this.posicion = posicion;
             this.equipo = equipo;
             this.puntos = puntos;
+          
 
         }
         public int id { get; set; }
         public int posicion { get; set; }
         public String equipo { get; set; }
         public int puntos { get; set; }
+        
 
     }
 }
